@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Mechanical Engineer</p>
+            <h1>Hi, I'm <span>Cristiano Freitas</span><br> from Madeira Island</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>24-year-old Portuguese Mechanical Engineer, recently graduated with a MsC degree in Mechanical Engineering from NOVA School of Science and Technology. Deputy Ship Repair Manager at Lisnave Estaleiros Navais, working in a fast-paced ship repair industry that demands strong problem-solving, adaptability, and mechanical engineering expertise. Passionate about tackling complex engineering challenges and driving innovation, with a strong work ethic, teamwork mindset and an insatiable curiosity for learning and growth.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>CAD</span><br>SolidWorks, AutoCAD</li>
+                        <li><span>CAE</span><br>Ansys Workbench - FEA & CFD</li>
+                        <li><span>Mechanical</span><br> Design for Manufacturing/Assemby (DFM/DFA) principles </li>
+                        <li><span>Additional Software</span><br> OCTAVE, Python, Latex, Excel, SAP, Automation Studio </li>
+                        <li>
+                            <span>Languages</span><br>
+                            Portuguese (Native Language), 
+                            <a href="https://drive.google.com/file/d/1x6zKy5wrxvqDP848rJ_DIU-jfLJ016BY/view?usp=sharing" 
+                               target="_blank" 
+                               style="color: inherit; text-decoration: underline;">
+                              English – C1
+                            </a>
+                          </li>                          
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Oct 2024 - Current</span><br>Deputy Ship Repair Manager | Lisnave Estaleiros Navais</li>
+                        <li><span>Jan - Sep 2024</span><br>Analysis and Mitigation of Hydraulic Transients in Steelmaking Equipment | Master Thesis at Megasa S.A</li>
+                        <li><span>Feb - Apr 2022</span><br>Nova SST Researcher</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Sep 2019 - Sep 2024</span><br> Master's degree in Mechanical Engineering</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Projects</h1>
+
+    <!-- GALERIA -->
+    <div class="work-list">
+      <!-- Projeto 1 -->
+      <a href="work-1.html" style="text-decoration: none; color: inherit;">
+        <div class="work">
+          <img src="images/work-1.jpg">
+          <div class="layer">
+            <h3>Experimental Test of Methods for Simulating the Atmospheric Boundary Layer</h3>
+            <p>Atmospheric boundary layer and its interaction with a cubic model over type 4 terrain.</p>
+            <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+              <div style="background-color: white; color: #ff004f; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 24px;">
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Projeto 2 -->
+      <a href="work-2.html" style="text-decoration: none; color: inherit;">
+        <div class="work">
+          <img src="images/work-2.jpg">
+          <div class="layer">
+            <h3>Progressive Tooling for Serial Production</h3>
+            <p>Tooling design for mass production of a steel bracket.</p>
+            <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+              <div style="background-color: white; color: #ff004f; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 24px;">
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Projeto 3 -->
+      <a href="work-3.html" style="text-decoration: none; color: inherit;">
+        <div class="work">
+          <img src="images/work-3.jpg">
+          <div class="layer">
+            <h3>Flow Packaging Machine</h3>
+            <p>Development of a flow packaging system for dry cakes, featuring product transport and sealing mechanisms.</p>
+            <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+              <div style="background-color: white; color: #ff004f; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 24px;">
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Projetos escondidos -->
+    <div id="more-projects" class="work-list" style="display: none;">
+      <!-- Projeto 4 -->
+      <a href="work-4.html" style="text-decoration: none; color: inherit;">
+        <div class="work">
+          <img src="images/work-4.jpg">
+          <div class="layer">
+            <h3>Cliff Flow CFD & Recirculation</h3>
+            <p>2D CFD study of turbulent flow over a cliff to identify the recirculation zone and assess wind turbine suitability.</p>
+            <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+              <div style="background-color: white; color: #ff004f; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 24px;">
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <!-- Projeto 5 -->
+      <a href="work-5.html" style="text-decoration: none; color: inherit;">
+        <div class="work">
+          <img src="images/work-5.jpg">
+          <div class="layer">
+            <h3>Hydraulic Transient Mitigation in Steelmaking</h3>
+            <p>Master's thesis on designing a pressure accumulator to minimize hydraulic surges, using Automation Studio simulations to enhance system performance and reduce failures.</p>
+            <div style="display: flex; justify-content: center; align-items: center; margin-top: 20px;">
+              <div style="background-color: white; color: #ff004f; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 24px;">
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Botão See More -->
+    <div style="text-align: center; margin-top: 30px;">
+      <button class="btn" id="seeMoreBtn" onclick="mostrarMaisProjetos()">See more</button>
+    </div>
+  </div>
+</div>
+  
+  
+  
+  
+
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>
+                    <i class="fas fa-paper-plane"></i>
+                    <a href="mailto:cristianorf8b@gmail.com" style="color: white; text-decoration: none;">
+                      cristianorf8b@gmail.com
+                    </a>
+                  </p>
+                  
+                <p>
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/cristianofreitas01/" target="_blank" style="color: white; text-decoration: none;">
+                      https://www.linkedin.com/in/cristianofreitas01/
+                    </a>
+                  </p>
+                  
+                <p><i class="fas fa-phone-square-alt"></i> +351 936 397 492</p>
+                <a href="images/CV- Cristiano.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+              <form name="submit-to-google-sheet" style="display: flex; flex-direction: column; align-items: center;">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            
+                <!-- ⚡ Mensagem logo antes do botão -->
+                <div style="width: 100%; display: flex; justify-content: center;">
+                  <span id="msg" style="opacity: 0; transition: opacity 0.5s ease; color: lightgreen; font-weight: bold; margin-bottom: 10px; font-size: 16px;"></span>
+                </div>
+            
+                <button type="submit" class="btn btn2" id="submitBtn" style="margin-top: 0;">
+                  <span id="btnText">Submit</span>
+                  <span id="spinner" style="display: none; margin-left: 10px;">⏳</span>
+                </button>
+              </form>
+            </div>
+            
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Cristiano.</p>
+    </div>
+</div>
+
+
+
+<script>
+
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname){
+      for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+  }
+
+</script>
+
+<script>
+
+  var sidemeu = document.getElementById("sidemenu");
+
+  function openmenu(){
+      sidemeu.style.right = "0";
+  }
+  function closemenu(){
+      sidemeu.style.right = "-200px";
+  }
+
+</script>
+
+<script>
+    function mostrarMaisProjetos() {
+      const projetos = document.getElementById("more-projects");
+      const botao = document.getElementById("seeMoreBtn");
+  
+      if (projetos) {
+        projetos.style.display = "flex";
+      }
+  
+      if (botao) {
+        botao.style.display = "none";
+      }
+    }
+</script>
+
+
+
+  
+<script>
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwG0KicjgIAf5ZAPsm87NaxkIts3mBogEUDBEhcKt-V4U5D-QOP3wR5nC2owubnw8wu/exec';
+const form = document.forms['submit-to-google-sheet'];
+const msg = document.getElementById("msg");
+const btnText = document.getElementById("btnText");
+const spinner = document.getElementById("spinner");
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  
+  // Estado: Enviando...
+  btnText.innerText = "Sending...";
+  spinner.style.display = "inline-block";
+  
+  try {
+    const response = await fetch(scriptURL, {
+      method: 'POST',
+      body: new FormData(form)
+    });
+
+    if (response.ok) {
+      msg.innerText = "✔ Message sent successfully!";
+      msg.style.color = "#00c853"; // verde sucesso
+    } else {
+      throw new Error("Something went wrong.");
+    }
+  } catch (error) {
+    msg.innerText = "❌ Failed to send message. Try again later.";
+    msg.style.color = "#ff5252"; // vermelho erro
+    console.error('Error!', error.message);
+  }
+
+  // Voltar botão para "Submit" e esconder spinner
+  btnText.innerText = "Submit";
+  spinner.style.display = "none";
+
+  // Animar o aparecimento da mensagem
+  msg.style.opacity = "1";
+
+  setTimeout(() => {
+    msg.style.opacity = "0"; // Fade-out depois de 5s
+    setTimeout(() => {
+      msg.innerText = ""; // Esvaziar texto depois do fade-out
+    }, 500); // espera o fade-out terminar (0.5s)
+  }, 5000);
+
+  form.reset();
+});
+
+</script>
+
+
+
+</body>
+</html>

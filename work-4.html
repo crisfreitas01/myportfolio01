@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cliff Flow CFD & Recirculation Analysis</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/your-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- ✅ NAVIGATION BAR & HERO SECTION -->
+<div id="header" class="short-header">
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="index.html#header">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#portfolio">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+<div class="project-title-box">
+    <h1 style="position: relative; top: -20px; font-size: 64px; text-align: center; color: white;">
+      Cliff Flow <span style="color: #ff0051;"> CFD & Recirculation Analysis</span>
+    </h1>
+  </div>
+  
+  
+  
+  
+
+
+<!-- ✅ TEXT + IMAGE SECTION -->
+<!-- 📍 Part 1 — Conceptual Flow Model -->
+<section style="display: flex; justify-content: center; align-items: flex-start; padding: 40px 20px 20px 20px; gap: 40px; flex-wrap: wrap; max-width: 1300px; margin: 0 auto;">
+  <!-- Texto -->
+  <div style="flex: 1; min-width: 300px; max-width: 650px; color: #ccc; font-family: 'Poppins', sans-serif; font-size: 17px; line-height: 1.7;">
+    <p>
+      This project presents a <strong>2D CFD study</strong> of wind flow over a cliff, using a <strong>simplified step geometry</strong> to replicate key flow features such as <strong>separation</strong> and <strong>recirculation zones</strong>.
+    </p>
+    <p>
+      The analysis supports <strong>site evaluation</strong> for future wind turbine installation by identifying regions of <strong>flow acceleration</strong>. Based on prior studies and simplified atmospheric boundary conditions, the conceptual model was defined with key flow phenomena: <strong>upstream separation</strong>, <strong>wake development</strong>, and <strong>stagnation zones</strong> at the cliff face.
+    </p>
+  </div>
+  <!-- Imagem -->
+  <div style="flex: 1; min-width: 300px; max-width: 600px; display: flex; justify-content: center;">
+    <img src="images/work-41.png" alt="Concept Sketch" style="width: 100%; max-width: 600px; border-radius: 10px;" />
+  </div>
+</section>
+
+<!-- 📍 Part 2 — Meshing Strategy -->
+<section style="display: flex; justify-content: center; align-items: flex-start; padding: 20px; gap: 40px; flex-wrap: wrap;">
+  <!-- Imagem -->
+  <div style="flex: 1; min-width: 300px; max-width: 600px;">
+    <img src="images/work-42.png" alt="Mesh" style="width: 100%; border-radius: 10px;" />
+  </div>
+  <!-- Texto -->
+  <div style="flex: 1; min-width: 300px; max-width: 600px; color: #ccc; font-family: 'Poppins', sans-serif; font-size: 17px; line-height: 1.7;">
+    <p>
+      A <strong>structured mesh</strong> was generated with <strong>refinement near solid walls</strong> to ensure accurate resolution of <strong>boundary layer effects</strong> and correct <strong>y⁺ values</strong> for turbulence modeling. Several mesh configurations were tested to balance <strong>computational cost</strong> and <strong>accuracy</strong>.
+    </p>
+    <p>
+      Special attention was given to <strong>mesh quality</strong> around the step, where gradients are strongest, and convergence behavior was monitored through <strong>residual analysis</strong> during simulation.
+    </p>
+  </div>
+</section>
+
+<!-- 📍 Part 3 — Velocity Contours and Recirculation Region -->
+<section style="display: flex; justify-content: center; align-items: flex-start; padding: 20px; gap: 40px; flex-wrap: wrap;">
+  <!-- Texto -->
+  <div style="flex: 1; min-width: 300px; max-width: 600px; color: #ccc; font-family: 'Poppins', sans-serif; font-size: 17px; line-height: 1.7;">
+    <p>
+      <strong>Velocity magnitude contours</strong> reveal a significant increase in wind speed immediately above the cliff, identifying this area as a potential <strong>hotspot for wind energy capture</strong>. The simulation confirms the <strong>recirculation bubble</strong> forming behind the step, typical of <strong>bluff body flows</strong>.
+    </p>
+    <p>
+      This stage solidified my <strong>CFD post-processing skills</strong>, particularly in identifying regions of interest for <strong>engineering applications</strong> through <strong>contour plots</strong> and <strong>vector fields</strong>.
+    </p>
+  </div>
+  <!-- Imagem -->
+  <div style="flex: 1; min-width: 300px; max-width: 600px;">
+    <img src="images/work-43.png" alt="Velocity Field" style="width: 100%; border-radius: 10px;" />
+  </div>
+</section>
+
+<!-- 📍 Part 4 — Turbulence Intensity Mapping -->
+<section style="display: flex; justify-content: center; align-items: flex-start; padding: 20px; gap: 40px; flex-wrap: wrap;">
+  <!-- Imagem -->
+  <div style="flex: 1; min-width: 300px; max-width: 600px;">
+    <img src="images/work-44.png" alt="Turbulence Intensity" style="width: 100%; border-radius: 10px;" />
+  </div>
+  <!-- Texto -->
+  <div style="flex: 1; min-width: 300px; max-width: 600px; color: #ccc; font-family: 'Poppins', sans-serif; font-size: 17px; line-height: 1.7;">
+    <p>
+      The final analysis maps the <strong>turbulent intensity</strong> across the domain, highlighting how <strong>recirculation</strong> affects <strong>flow stability</strong>. Higher turbulence levels were found in the wake region, indicating increased <strong>mechanical stress</strong> that would affect turbine performance and <strong>maintenance cycles</strong>.
+    </p>
+    <p>
+      This experience enhanced my understanding of <strong>turbulence modeling</strong>, <strong>mesh sensitivity</strong>, and how <strong>physical simplifications</strong> impact <strong>engineering decisions</strong> in <strong>wind energy siting</strong>.
+    </p>
+  </div>
+</section>
+
+
+
+<!-- 🛠️ CORE SKILLS DEMONSTRATED - UNIFORM WIDTH -->
+<!-- 🛠️ CORE SKILLS DEMONSTRATED - CFD Project -->
+<section style="max-width: 1100px; margin: 80px auto; font-family: 'Poppins', sans-serif;">
+  <div style="background-color: #1e1e1e; padding: 16px; border-radius: 6px; text-align: center; color: white; font-weight: bold; font-size: 20px; margin-bottom: 20px; width: 100%; border: 2px solid #662f36;">
+    CORE SKILLS DEMONSTRATED
+  </div>
+
+  <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
+    <div style="flex: 1 1 calc(50% - 10px); background-color: #2b2b2b; padding: 12px 24px; border-radius: 6px; color: white; font-weight: 600; text-align: center; border: 2px solid #662f36;">
+      CFD Simulation with ANSYS Fluent
+    </div>
+    <div style="flex: 1 1 calc(50% - 10px); background-color: #2b2b2b; padding: 12px 24px; border-radius: 6px; color: white; font-weight: 600; text-align: center; border: 2px solid #662f36;">
+      Boundary Layer & Mesh Refinement
+    </div>
+    <div style="flex: 1 1 calc(50% - 10px); background-color: #2b2b2b; padding: 12px 24px; border-radius: 6px; color: white; font-weight: 600; text-align: center; border: 2px solid #662f36;">
+      Turbulence Modeling (k-ε)
+    </div>
+    <div style="flex: 1 1 calc(50% - 10px); background-color: #2b2b2b; padding: 12px 24px; border-radius: 6px; color: white; font-weight: 600; text-align: center; border: 2px solid #662f36;">
+      Post-Processing: Contour & Vector Analysis
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- ⭐️Other Projects -->
+<section style="max-width: 1100px; margin: 60px auto 40px auto; font-family: 'Poppins', sans-serif; color: #fff;">
+  <h2 style="text-align: center; font-size: 24px; margin-bottom: 40px;">Other Projects</h2>
+  <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center;">
+
+    <!-- Card template -->
+    <a href="work-1.html" style="text-decoration: none; color: inherit;">
+      <div style="background-color: #222; border-radius: 16px; width: 280px; padding: 20px; text-align: center; transition: all 0.3s ease; box-shadow: 0 6px 18px rgba(0,0,0,0.2);" onmouseover="this.style.transform='translateY(-8px)'" onmouseout="this.style.transform='none'">
+        <img src="images/work-1.jpg" alt="Progressive Tooling" style="width: 100%; border-radius: 12px; margin-bottom: 15px;" />
+        <h3 style="font-size: 17px; color: #ff004f; margin-bottom: 10px;">Experimental Test of Methods for Simulating the Atmospheric Boundary Layer</h3>
+        <p style="font-size: 14px; color: #ccc;">Atmospheric boundary layer and its interaction with a cubic model over type 4 terrain.</p>
+      </div>
+    </a>
+
+    <!-- Project 3 -->
+    <a href="work-2.html" style="text-decoration: none; color: inherit;">
+      <div style="background-color: #222; border-radius: 16px; width: 280px; padding: 20px; text-align: center; transition: all 0.3s ease; box-shadow: 0 6px 18px rgba(0,0,0,0.2);" onmouseover="this.style.transform='translateY(-8px)'" onmouseout="this.style.transform='none'">
+        <img src="images/work-2.jpg" alt="Flow Packaging" style="width: 100%; border-radius: 12px; margin-bottom: 15px;" />
+        <h3 style="font-size: 17px; color: #ff004f; margin-bottom: 10px;">Progressive Tooling for Serial Production</h3>
+        <p style="font-size: 14px; color: #ccc;">Tooling design for mass production of a steel bracket.</p>
+      </div>
+    </a>
+
+    <!-- Project 3 -->
+    <a href="work-3.html" style="text-decoration: none; color: inherit;">
+      <div style="background-color: #222; border-radius: 16px; width: 280px; padding: 20px; text-align: center; transition: all 0.3s ease; box-shadow: 0 6px 18px rgba(0,0,0,0.2);" onmouseover="this.style.transform='translateY(-8px)'" onmouseout="this.style.transform='none'">
+        <img src="images/work-3.jpg" alt="Flow Packaging" style="width: 100%; border-radius: 12px; margin-bottom: 15px;" />
+        <h3 style="font-size: 17px; color: #ff004f; margin-bottom: 10px;">Flow Packaging Machine</h3>
+        <p style="font-size: 14px; color: #ccc;">System for dry cakes, featuring product transport and sealing mechanisms.</p>
+      </div>
+    </a>
+
+    <!-- Project 5 -->
+    <a href="work-5.html" style="text-decoration: none; color: inherit;">
+      <div style="background-color: #222; border-radius: 16px; width: 280px; padding: 20px; text-align: center; transition: all 0.3s ease; box-shadow: 0 6px 18px rgba(0,0,0,0.2);" onmouseover="this.style.transform='translateY(-8px)'" onmouseout="this.style.transform='none'">
+        <img src="images/work-5.jpg" alt="Flow Over Cliff" style="width: 100%; border-radius: 12px; margin-bottom: 15px;" />
+        <h3 style="font-size: 17px; color: #ff004f; margin-bottom: 10px;">Hydraulic Transients Analysis & Accumulator Design</h3>
+        <p style="font-size: 14px; color: #ccc;">Master's thesis on designing a pressure accumulator to minimize hydraulic surges, using Automation Studio simulations to enhance system performance and reduce failures.</p>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+  
+  
+
+  
+  
+  
+  <!-- 🔙 Back Button -->
+  <div style="text-align: center; margin-top: 40px;">
+    <a href="index.html#portfolio" class="btn">← Back to Portfolio</a>
+  </div>
+  
+  
+
+</body>
+</html>
